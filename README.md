@@ -13,3 +13,13 @@ A simple smart contract using Solidity + Hardhat for basic math operations.
 ```bash
 git clone https://github.com/<username>/basic-math-contract.git
 cd basic-math-contract
+
+npm install
+
+npx hardhat test
+
+ALCHEMY_API_URL=https://eth-sepolia.g.alchemy.com/v2/<API_KEY>
+PRIVATE_KEY=0xabc123...
+
+npx hardhat run scripts/deploy.js --network sepolia
+
